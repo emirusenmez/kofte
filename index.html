@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>PDF Görüntüleyici</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* İsteğe bağlı arka plan rengi */
+        }
+        embed {
+            width: 80%;
+            height: 80%;
+            border: none;
+        }
+    </style>
+</head>
 <body>
-
-<embed src="kofteci.pdf" >
-
+    <embed src="kofteci.pdf" type="application/pdf">
 </body>
 </html>
