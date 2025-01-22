@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PDF Görüntüleyici</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Galerisi</title>
     <style>
-        html, body {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #f0f0f0; /* İsteğe bağlı arka plan rengi */
+            background: rgba(0, 0, 0, 0.8); /* Siyah arka plan */
+            backdrop-filter: blur(10px); /* Bulanık efekt */
+            height: 100vh;
+            overflow: auto; /* Kaydırma için */
         }
-        embed {
-            width: 80%;
-            height: 80%;
-            border: none;
+
+        img {
+            width: 100%; /* Resimler genişlikte %100 */
+            max-width: 1200px; /* İsteğe bağlı: Maksimum genişlik */
+            height: auto; /* Oranları korumak için */
+            margin-bottom: 20px; /* Alt aralık */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Resimler için hafif gölge */
+            border-radius: 10px; /* Köşe yumuşatma */
         }
     </style>
 </head>
 <body>
-    <embed src="kofteci.pdf" type="application/pdf">
+    <img src="1.png" alt="Resim 1">
+    <img src="2.png" alt="Resim 2">
+    <img src="3.png" alt="Resim 3">
 </body>
 </html>
